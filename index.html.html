@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #004080;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .about, .experience, .education, .skills, .contact {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '\2022';
+            color: #004080;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+        }
+
+        footer {
+            background-color: #004080;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #004080;
+            color: #ffffff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Md Ali Ridoy</h1>
+        <p>Professional Portfolio</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Write about yourself here. For example, "I am an enthusiastic and dedicated professional with experience in sales, marketing, and customer service. I am currently pursuing a B.Sc. in Computer Science at Niels Brock Copenhagen Business College."</p>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Executive – Sales & Marketing, Apollo Tyres</strong> - IFAD Motors (Oct 2023 - Present)
+                    <p>Managed sales operations, developed marketing strategies, and built client relationships to achieve targets.</p>
+                </li>
+                <li>
+                    <strong>Research Associate</strong> - Apex Husain Group (Feb 2022 - Sep 2023)
+                    <p>Conducted market research and provided insights for the rubber industry.</p>
+                </li>
+                <li>
+                    <strong>Sales Officer</strong> - Unilever Bangladesh Ltd (Jul 2020 - Jun 2021)
+                    <p>Handled FMCG sales and marketing operations, achieving consistent growth in revenue.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>B.Sc. in Computer Science</strong> - Niels Brock Copenhagen Business College (2024 - Present)
+                </li>
+                <li>
+                    <strong>Bachelor's Degree</strong> - [Your Previous University or School] (Year - Year)
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Market Research</li>
+                <li>Product Branding and Marketing</li>
+                <li>Customer Service</li>
+                <li>Store Management</li>
+                <li>Technical Proficiency in [Add any software/tools you know]</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Md Ali Ridoy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
